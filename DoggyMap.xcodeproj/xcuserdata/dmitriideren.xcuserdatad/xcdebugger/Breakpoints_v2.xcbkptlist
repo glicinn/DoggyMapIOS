@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "54E7CE6F-C42D-4114-A934-7AB06A3B534E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4E571745-CF12-4B7F-A366-46D54CF4D15D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DoggyMap/Views/Main/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "4E571745-CF12-4B7F-A366-46D54CF4D15D - c89223cb82ea0215"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DoggyMap.ContentView.body.getter : some"
+                  moduleName = "DoggyMap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmitriideren/Desktop/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/XCode/DoggyMap/DoggyMap/Views/Main/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "520">
+               </Location>
+               <Location
+                  uuid = "4E571745-CF12-4B7F-A366-46D54CF4D15D - c89223cb82ea0215"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DoggyMap.ContentView.body.getter : some"
+                  moduleName = "DoggyMap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmitriideren/Desktop/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/XCode/DoggyMap/DoggyMap/Views/Main/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "556">
+               </Location>
+               <Location
+                  uuid = "4E571745-CF12-4B7F-A366-46D54CF4D15D - b767e21ca2a0d277"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DoggyMap.ContentView.body.getter : some"
+                  moduleName = "DoggyMap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmitriideren/Desktop/XCode/DoggyMap/DoggyMap/Views/Main/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "520">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "917D9744-6161-48C2-97DB-445DC28CB6B1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DoggyMap/Views/Main/NewsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "327"
+            endingLineNumber = "327"
+            landmarkName = "DetailView(item:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "917D9744-6161-48C2-97DB-445DC28CB6B1 - c532abb4c26264e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #2 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.opacity(Swift.Double) -&gt; some&gt;&gt;.0 in DoggyMap.NewsView.DetailView(item: DoggyMap.Today) -&gt; some"
+                  moduleName = "DoggyMap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmitriideren/Desktop/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/XCode/DoggyMap/DoggyMap/Views/Main/NewsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "324"
+                  endingLineNumber = "324"
+                  offsetFromSymbolStart = "448">
+               </Location>
+               <Location
+                  uuid = "917D9744-6161-48C2-97DB-445DC28CB6B1 - 6f5ff7c0c9071b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in closure #2 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.opacity(Swift.Double) -&gt; some&gt;&gt;.0 in DoggyMap.NewsView.DetailView(item: DoggyMap.Today) -&gt; some"
+                  moduleName = "DoggyMap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dmitriideren/Desktop/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%8B/XCode/DoggyMap/DoggyMap/Views/Main/NewsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "325"
+                  endingLineNumber = "325"
+                  offsetFromSymbolStart = "48">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90940283-F210-4165-A0B4-3146D3EE89E5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DoggyMap/Firebase/FirebaseTestViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "FirebaseTestViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
