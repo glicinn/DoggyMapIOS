@@ -104,7 +104,7 @@ struct ProfileView: View {
                         Button(action: {
                             self.isStartViewPresented = true
                         }){
-                            Text("My Calendar")
+                            Text("calendar-string".localized)
                                 .frame(width: UIScreen.main.bounds.size.width - 50)
                                 .frame(minHeight: 55,
                                 maxHeight: UIScreen.main.bounds.size.height/10)
@@ -154,7 +154,7 @@ struct ProfileView: View {
                       print("Error signing out: %@", signOutError)
                     }
                 }){
-                    Text("Log Out")
+                    Text("log-out-string".localized)
                         .frame(width: UIScreen.main.bounds.size.width - 50)
                         .frame(minHeight: 55,
                         maxHeight: UIScreen.main.bounds.size.height/15)

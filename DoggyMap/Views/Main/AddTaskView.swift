@@ -61,22 +61,23 @@ struct AddTaskView: View {
                         .contentShape(Rectangle())
                 }
                 
-                Text("Create New Task")
+                Text("create-new-task-string".localized)
                     .font(.custom("Avenir", size: 28))
                     .foregroundColor(.white)
                     .padding(.vertical, 15)
                 
-                TitleView("NAME")
-                TextField("Make New Video", text: $taskName)
+                TitleView("task-name-string".localized)
+                TextField("task-name-description-string".localized, text: $taskName)
                     .font(.custom("Avenir", size: 16))
                     .tint(.white)
                     .padding(.top, 2)
+                    
                 
                 Rectangle()
                     .fill(.white.opacity(0.7))
                     .frame(height: 1)
                 
-                TitleView("DATE")
+                TitleView("task-date-string".localized)
                     .padding(.top, 15)
                 
                 HStack(alignment: .bottom, spacing: 12){
@@ -153,9 +154,9 @@ struct AddTaskView: View {
             }
             
             VStack(alignment: .leading, spacing: 10) {
-                TitleView("DESCRIPTION", .gray)
+                TitleView("task-description-string".localized, .gray)
                 
-                TextField("About Your Task", text: $taskDescription)
+                TextField("task-description-description-string".localized, text: $taskDescription)
                     .font(.custom("Avenir", size: 16))
                     .padding(.top, 2)
                 
@@ -163,7 +164,7 @@ struct AddTaskView: View {
                     .fill(.black.opacity(0.2))
                     .frame(height: 1)
                 
-                TitleView("CATEGORY", .gray)
+                TitleView("task-category-string".localized, .gray)
                     .padding(.top, 15)
                 
                 LazyVGrid(columns: Array(repeating: .init(.flexible(), spacing: 20), count: 3), spacing: 15){
@@ -216,7 +217,7 @@ struct AddTaskView: View {
                 
                 
                 } label: {
-                    Text("Create Task")
+                    Text("create-string".localized)
                         .font(.custom("Avenir", size: 16))
                         .foregroundColor(.white)
                         .padding(.vertical, 15)
@@ -237,7 +238,7 @@ struct AddTaskView: View {
     
     @ViewBuilder
     func TitleView(_ value: String,_ color: Color = .white.opacity(0.7))-> some View{
-        Text(value)
+        Text(value.uppercased())
             .font(.custom("Avenir", size: 12))
             .foregroundColor(color)
     }

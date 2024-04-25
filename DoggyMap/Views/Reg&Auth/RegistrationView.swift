@@ -35,36 +35,36 @@ struct RegistrationView: View {
                 
                 Spacer()
                 
-                Text("Registration")
+                Text("registration-string".localized)
                     .font(Font.custom("Avenir", size: 30))
                     .bold()
                 
                 
-                TextField("Enter your name", text: $name)
+                TextField("reg-name-string".localized, text: $name)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal, 50)
                 
-                TextField("Enter your surname", text: $surname)
+                TextField("reg-surname-string".localized, text: $surname)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal, 50)
 
-                TextField("Enter your email", text: $email)
+                TextField("reg-email-string".localized, text: $email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 //                .border(Color.black)
                     .padding(.horizontal, 50)
                 
-                SecureField("Enter your password", text: $password)
+                SecureField("reg-password-string".localized, text: $password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal, 50)
                 
-                SecureField("Repeat your password", text: $repPassword)
+                SecureField("reg-repeat-password-string".localized, text: $repPassword)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal, 50)
                 
                 HStack{
-                    Text("Have an account?")
+                    Text("reg-to-auth-string".localized)
                     NavigationLink(destination: AuthorizationView().navigationBarBackButtonHidden(true)){
-                        Text("Authorize")
+                        Text("to-auth-string".localized)
                             .foregroundColor(Color.gray)
                     }
                 } .padding(.top, 20)
@@ -93,7 +93,7 @@ struct RegistrationView: View {
                     
 //                    self.showError.toggle()
                 }){
-                    Text("Log up")
+                    Text("log-up-string".localized)
                         .frame(width: UIScreen.main.bounds.size.width - 50)
                         .frame(minHeight: 55,
                         maxHeight: UIScreen.main.bounds.size.height/15)
@@ -119,11 +119,11 @@ struct RegistrationError: View {
         Image(systemName: "xmark.circle")
             .font (.system(size: 80, weight: .light))
             .foregroundColor(Color.red)
-        Text("Registration Crashed")
+        Text("reg-crash-string".localized)
             .font (.system(size: 20, weight: .bold))
             .foregroundColor(.primary)
             .padding(10)
-        Text("Repeat, please")
+        Text("repeat-string".localized)
             .font (.system(size: 15, weight: .bold))
             .foregroundColor(Color.gray)
     }

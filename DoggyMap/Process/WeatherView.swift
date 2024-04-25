@@ -18,7 +18,7 @@ struct WeatherView: View {
                         .foregroundColor(.white)
                         .bold()
                         .font(.title)
-                    Text("Today, \(Date().formatted(.dateTime.month().day().hour().minute()))")
+                    Text("today-string".localized + " \(Date().formatted(.dateTime.month().day().hour().minute()))")
                         .fontWeight(.light)
                         .foregroundColor(.white)
                 }
@@ -73,19 +73,19 @@ struct WeatherView: View {
                 Spacer()
                 
                 VStack(alignment: .leading, spacing: 20){
-                    Text("Weather now")
+                    Text("weather-now-string".localized)
                         .bold()
                         .padding(.bottom)
                     
                     HStack{
-                        WeatherRow(logo: "thermometer", name: "Min temp", value: (weather.main.tempMin.roundDouble() + "°"))
+                        WeatherRow(logo: "thermometer", name: "min-temp-string".localized, value: (weather.main.tempMin.roundDouble() + "°"))
                         Spacer()
-                        WeatherRow(logo: "thermometer", name: "Max temp", value: (weather.main.tempMax.roundDouble() + "°"))
+                        WeatherRow(logo: "thermometer", name: "max-temp-string".localized, value: (weather.main.tempMax.roundDouble() + "°"))
                     }
                     HStack{
-                        WeatherRow(logo: "wind", name: "Wind speed", value: (weather.wind.speed.roundDouble() + "m/s"))
+                        WeatherRow(logo: "wind", name: "wind-speed-string".localized, value: (weather.wind.speed.roundDouble() + "m/s"))
                         Spacer()
-                        WeatherRow(logo: "humidity", name: "Humidity", value: (weather.main.humidity.roundDouble() + "%"))
+                        WeatherRow(logo: "humidity", name: "humidity-string".localized, value: (weather.main.humidity.roundDouble() + "%"))
                     }
 
                     

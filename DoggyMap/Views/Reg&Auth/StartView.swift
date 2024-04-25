@@ -13,15 +13,15 @@ struct StartView: View {
             TabView{
                 OnboardView(
                     systemImageName: "map",
-                    title: "Map",
-                    description: "Great forgiotting down your ideas and brainstorming your next feature."
+                    title: "map-menu-string".localized,
+                    description: "map-description-string".localized
                 )
                 
                 
                 OnboardView(
                     systemImageName: "newspaper",
-                    title: "News",
-                    description: "Great forgiotting down your ideas and brainstorming your next feature."
+                    title: "news-menu-string".localized,
+                    description: "news-description-string".localized
                 )
                 
                 VStack{
@@ -30,15 +30,15 @@ struct StartView: View {
                     
                     OnboardView(
                         systemImageName: "person",
-                        title: "Walkers",
-                        description: "Great forgiotting down your ideas and brainstorming your next feature."
+                        title: "weather-menu-string".localized,
+                        description: "weather-description-string".localized
                     )
                     
                     
 
                     
                     NavigationLink(destination: AuthorizationView().navigationBarBackButtonHidden(true)){
-                        Text("Start")
+                        Text("start-string".localized)
                             .bold()
                             .font(Font.custom("Avenir", size: 22))
                             .padding(12)

@@ -14,11 +14,11 @@ struct WelcomeView: View {
     var body: some View {
         VStack{
             VStack(spacing: 20){
-                Text("Welcome to the weather Window")
+                Text("weather-title-string".localized)
                     .bold()
                     .font(.title)
                     .foregroundColor(.white)
-                Text("Please share your current location to get the weather in your area")
+                Text("weather-condition-string".localized)
                     .padding()
                     .foregroundColor(.white)
             }

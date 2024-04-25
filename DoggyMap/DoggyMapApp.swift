@@ -18,7 +18,8 @@ struct DoggyMapApp: App {
     var body: some Scene {
         
         WindowGroup {
-            ContentView()
+//            ContentView()
+            LocalNotificationController()
 //WeatherContentView()
         }
     }

@@ -95,6 +95,10 @@
 		80B71EA92A2BBC2E002EA7E1 /* weatherData.json in Resources */ = {isa = PBXBuildFile; fileRef = 80B71EA82A2BBC2E002EA7E1 /* weatherData.json */; };
 		80B71EAB2A2BBFA1002EA7E1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B71EAA2A2BBFA1002EA7E1 /* Extensions.swift */; };
 		80B71EAD2A2BE5AF002EA7E1 /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B71EAC2A2BE5AF002EA7E1 /* WeatherRow.swift */; };
+		80D562F42BD91F480040C707 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80D562F62BD91F480040C707 /* Localizable.strings */; };
+		80D562F92BD91FB60040C707 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D562F82BD91FB60040C707 /* StringExtension.swift */; };
+		80D562FC2BDAAAC30040C707 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D562FB2BDAAAC30040C707 /* NotificationController.swift */; };
+		80D563002BDAB8E60040C707 /* LocalNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D562FF2BDAB8E60040C707 /* LocalNotificationController.swift */; };
 		80DEE2102BBB072900AEAF7F /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DEE20F2BBB072300AEAF7F /* CalendarView.swift */; };
 		80F56F6E2BCA6020008BCDC4 /* MapFirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F56F6D2BCA6020008BCDC4 /* MapFirebaseViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -148,6 +152,11 @@
 		80B71EA82A2BBC2E002EA7E1 /* weatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherData.json; sourceTree = "<group>"; };
 		80B71EAA2A2BBFA1002EA7E1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		80B71EAC2A2BE5AF002EA7E1 /* WeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRow.swift; sourceTree = "<group>"; };
+		80D562F52BD91F480040C707 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		80D562F82BD91FB60040C707 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		80D562FA2BDA91AB0040C707 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		80D562FB2BDAAAC30040C707 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		80D562FF2BDAB8E60040C707 /* LocalNotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationController.swift; sourceTree = "<group>"; };
 		80DEE20F2BBB072300AEAF7F /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		80F56F6D2BCA6020008BCDC4 /* MapFirebaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFirebaseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -242,6 +251,10 @@
 			isa = PBXGroup;
 			children = (
 				801F5D0D29D6B58900E62C89 /* DoggyMapApp.swift */,
+				80D562FB2BDAAAC30040C707 /* NotificationController.swift */,
+				80D562FF2BDAB8E60040C707 /* LocalNotificationController.swift */,
+				80D562F82BD91FB60040C707 /* StringExtension.swift */,
+				80D562F62BD91F480040C707 /* Localizable.strings */,
 				807FBDF329D8531600D6CDDD /* Views */,
 				807FBDF029D8519B00D6CDDD /* Models */,
 				807FBDF729D85B5F00D6CDDD /* ViewModels */,
@@ -457,6 +470,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 801F5D0129D6B58900E62C89;
 			packageReferences = (
@@ -478,6 +492,7 @@
 			files = (
 				801F5D1529D6B58A00E62C89 /* Preview Assets.xcassets in Resources */,
 				801F5D1229D6B58A00E62C89 /* Assets.xcassets in Resources */,
+				80D562F42BD91F480040C707 /* Localizable.strings in Resources */,
 				80B71EA92A2BBC2E002EA7E1 /* weatherData.json in Resources */,
 				801F5D2C29D6B5FE00E62C89 /* GoogleService-Info.plist in Resources */,
 			);
@@ -512,6 +527,7 @@
 				80A7A36C29F032CD0030E6E7 /* CustomTabView.swift in Sources */,
 				807FD6DE29F8297B00E6732F /* AdminWindowView.swift in Sources */,
 				801F5D2629D6B5D900E62C89 /* NewsView.swift in Sources */,
+				80D563002BDAB8E60040C707 /* LocalNotificationController.swift in Sources */,
 				80B71EA72A2BBB8A002EA7E1 /* ModelData.swift in Sources */,
 				801F5D3529D6B7FA00E62C89 /* ContentView.swift in Sources */,
 				807FD6D429F7DC5700E6732F /* FirebaseTest.swift in Sources */,
@@ -533,12 +549,26 @@
 				800B89F72BBB2D6900AF860F /* AddTaskView.swift in Sources */,
 				80B65BD229D9A37300CA6B8F /* LocationMapAnnotationView.swift in Sources */,
 				800B89F32BBB231900AF860F /* Task.swift in Sources */,
+				80D562FC2BDAAAC30040C707 /* NotificationController.swift in Sources */,
 				801861412A2BA79100104178 /* LoadingView.swift in Sources */,
+				80D562F92BD91FB60040C707 /* StringExtension.swift in Sources */,
 				801F5D2A29D6B5F200E62C89 /* MapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80D562F62BD91F480040C707 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80D562F52BD91F480040C707 /* en */,
+				80D562FA2BDA91AB0040C707 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		801F5D1629D6B58A00E62C89 /* Debug */ = {

@@ -70,17 +70,17 @@ struct NewsView: View {
                     HStack(alignment: .bottom){
                         VStack(alignment: .leading, spacing: 8){
                             
-//                            Text("\(Date.now, format: .dateTime.weekday(.wide)) \(Date.now, format: .dateTime.day()) \(Date.now, format: .dateTime.month(.wide))")
-//                                .textCase(.uppercase)
+                            
+                            Text("\(Date.now, format: .dateTime.weekday(.wide)) \(Date.now, format: .dateTime.day()) \(Date.now, format: .dateTime.month(.wide))")
+                            .textCase(.uppercase)
+                            .font (.callout)
+                            .foregroundColor (.gray)
+
+//                            Text ("FRIDAY 16 FEBRUARY")
 //                                .font (.callout)
 //                                .foregroundColor (.gray)
-
-//\\
-                            Text ("FRIDAY 16 FEBRUARY")
-                                .font (.callout)
-                                .foregroundColor (.gray)
                             
-                            Text ("News")
+                            Text("news-title-string".localized)
                                 .bold()
                                 .font(Font.custom("Avenir", size: 40))
 //                                .font(.largeTitle.bold())
@@ -298,7 +298,7 @@ struct NewsView: View {
                         
                     }){
                         Label{
-                            Text("Share News")
+                            Text("share-string".localized)
                         } icon: {
                             Image(systemName: "square.and.arrow.up.fill")
                         }

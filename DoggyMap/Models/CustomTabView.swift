@@ -14,10 +14,10 @@ struct CustomTabView: View {
     @Binding var showDetailPage: Bool
     
     let tabBarItems: [(image: String, title: String)] = [
-        ("magnifyingglass", "Places"),
-        ("safari", "News"),
-        ("cloud", "Weather"),
-        ("person", "Profile")
+        ("magnifyingglass", "places-string".localized),
+        ("safari", "news-string".localized),
+        ("cloud", "weather-string".localized),
+        ("person", "profile-string".localized)
     ]
     
     var body: some View {

@@ -32,24 +32,24 @@ struct AuthorizationView: View {
                 
                 Spacer()
                 
-                Text("Authorization")
+                Text("authorization-string".localized)
                     .font(Font.custom("Avenir", size: 30))
                     .bold()
                 
-                TextField("Enter your email", text: $email)
+                TextField("auth-email-string".localized, text: $email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 //                .border(Color.black)
                     .padding(.horizontal, 50)
                 
-                SecureField("Enter your password", text: $password)
+                SecureField("auth-password-string".localized, text: $password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal, 50)
                 
                 
                 HStack{
-                    Text("Don't have an account?")
+                    Text("auth-to-reg-string".localized)
                     NavigationLink(destination: RegistrationView().navigationBarBackButtonHidden(true)){
-                        Text("Register")
+                        Text("to-reg-string".localized)
                             .foregroundColor(Color.gray)
                     }
                 } .padding(.top, 20)
@@ -76,7 +76,7 @@ struct AuthorizationView: View {
                         }
                     }){
 //                        NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)){
-                        Text("Log in")
+                        Text("log-in-string".localized)
                             .frame(width: UIScreen.main.bounds.size.width - 50)
                             .frame(minHeight: 55,
                             maxHeight: UIScreen.main.bounds.size.height/15)
@@ -107,11 +107,11 @@ struct AuthorizationError: View {
         Image(systemName: "xmark.circle")
             .font (.system(size: 80, weight: .light))
             .foregroundColor(Color.red)
-        Text("Authorization Crashed")
+        Text("auth-crash-string".localized)
             .font (.system(size: 20, weight: .bold))
-            .foregroundColor(Color.black)
+            .foregroundColor(.primary)
             .padding(10)
-        Text("Repeat, please")
+        Text("repeat-string".localized)
             .font (.system(size: 15, weight: .bold))
             .foregroundColor(Color.gray)
         

@@ -12,6 +12,9 @@ struct CalendarView: View {
     @State private var currentDay: Date = .init()
     @State private var tasks: [Task] = sampleTasks
     @State private var addNewTask: Bool = false
+    
+    @State private var myName: String = "Dmitri"
+    
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
             TimelineView()
@@ -119,9 +122,9 @@ struct CalendarView: View {
         VStack{
             HStack{
                 VStack(alignment: .leading, spacing: 6){
-                    Text("Today")
+                    Text("today-string".localized)
                         .font(Font.custom("Avenir", size: 30))
-                    Text("Welcome, Dmitri")
+                    Text("welcome-string".localized + " \(myName)")
                         .font(Font.custom("Avenir", size: 14))
                 }
                 .hAlign(.leading)
@@ -131,7 +134,7 @@ struct CalendarView: View {
                 } label: {
                     HStack(spacing: 10){
                         Image(systemName: "plus")
-                        Text("Add Task")
+                        Text("add-task-string".localized)
                             .font(Font.custom("Avenir", size: 15))
                     }
                     .padding(.vertical, 10)

@@ -93,7 +93,7 @@ extension LocationDetailView{
                 .foregroundColor(.secondary)
             
             if let url = URL(string: location.link){
-                Link("Read more", destination: url)
+                Link("read-more-string".localized, destination: url)
 //                    .font(.headline)
                     .font(Font.custom("Avenir", size: 17))
                     .fontWeight(.bold)

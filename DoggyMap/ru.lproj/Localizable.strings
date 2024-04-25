@@ -1,0 +1,76 @@
+// Start menu
+"map-menu-string" = "Карта";
+"map-description-string" = "Здорово записать свои идеи и провести мозговой штурм для создания следующей функции.";
+"news-menu-string" = "Новости";
+"news-description-string" = "Здорово записать свои идеи и провести мозговой штурм для создания следующей функции.";
+"weather-menu-string" = "Погода";
+"weather-description-string" = "Здорово записать свои идеи и провести мозговой штурм для создания следующей функции.";
+"start-string" = "Старт";
+
+// Auth Window
+"authorization-string" = "Авторизация";
+"auth-email-string" = "Введите вашу почту";
+"auth-password-string" = "Введите ваш пароль";
+"auth-to-reg-string" = "Нет аккаунта?";
+"to-reg-string" = "Зарегистрироваться";
+"log-in-string" = "Войти";
+
+// Reg Window
+"registration-string" = "Регистрация";
+"reg-name-string" = "Введите ваше имя";
+"reg-surname-string" = "Введите вашу фамилию";
+"reg-email-string" = "Введите вашу почту";
+"reg-password-string" = "Введите ваш пароль";
+"reg-repeat-password-string" = "Повторите ваш пароль";
+"reg-to-auth-string" = "Уже есть аккаунт?";
+"to-auth-string" = "Войти";
+"log-up-string" = "Зарегистрироваться";
+
+// Auth Crash Window
+"auth-crash-string" = "Авторизация провалена";
+"repeat-string" = "Повторите, пожалуйста";
+
+// Reg Crash Window
+"reg-crash-string" = "Регистрация провалена";
+
+// Tab Bar
+"places-string" = "Места";
+"news-string" = "Новости";
+"weather-string" = "Погода";
+"profile-string" = "Профиль";
+
+// Location Info
+"read-more-string" = "Подробнее";
+
+// News Window
+"news-title-string" = "Новости";
+
+// News View
+"share-string" = "Поделиться";
+
+// Weather Window
+"weather-title-string" = "Добро пожаловать в окно Погоды";
+"weather-condition-string" = "Пожалуйста, сообщите о своем текущем местоположении, чтобы узнать погоду в вашем регионе";
+"today-string" = "Сегодня";
+"weather-now-string" = "Погода сейчас";
+"min-temp-string" = "Мин темп";
+"max-temp-string" = "Макс темп";
+"wind-speed-string" = "Ветер";
+"humidity-string" = "Влажность";
+
+// Profile Window
+"calendar-string" = "Мой календарь";
+"log-out-string" = "Выйти";
+"welcome-string" = "Добро пожаловать,";
+"add-task-string" = "Добавить задачу";
+
+// Add Task Window
+"create-new-task-string" = "Создать Новую Задачу";
+"task-name-string" = "Название";
+"task-name-description-string" = "Сделать прививку";
+"task-date-string" = "Дата";
+"task-description-string" = "Описание";
+"task-description-description-string" = "О вашей задаче";
+"task-category-string" = "Категория";
+"create-string" = "Создать Задачу";
+
